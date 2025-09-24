@@ -1,0 +1,21 @@
+<!-- <h1 class="text-2xl font-bold">CV</h1> <br/> -->
+<div class="w-full aspect-[1/1]">
+    <div id="loading" class="w-full h-full bg-gray-300">
+        Loading CV...
+    </div>
+    <iframe
+        id="cv-iframe"
+        src="https://drive.google.com/file/d/1FMUKAbOKn0FRUyKFS5ID6FlnaKomDgh-/preview" 
+        class="w-full h-full" 
+        allow="autoplay">
+    </iframe>
+
+    <script>
+        const loading = document.getElementById('loading');
+        const iframe = document.getElementById('cv-iframe');
+        iframe.addEventListener('load', function() {
+            loading.classList.add('hidden');
+            iframe.classList.remove('hidden');
+        });
+    </script>
+</div>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyeoul Lee</title>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T25J3CZW');</script>
+    <link href="./output.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ["Liberation Serif","Times New Roman", "Times", "serif"],
+                    }
+                }
+            }
+        }
+    </script>
+      <script>
+        function copyToClipBoard(){
+            var content = "tspleetz@unist.ac.kr";
+            navigator.clipboard.writeText(content).then(() => {
+                alert("Email address copied to clipboard");
+            });
+        }
+    </script>
+</head>
+<body class="font-serif">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T25J3CZW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class="max-w-[1280px] mx-auto">
+        <div class="md:flex">
+            <header class="md:w-[300px] bg-gray-200 md:bg-transparent px-4 pt-10 pb-4">
+                <h1 ><span class="text-4xl">Gyeoul Lee</span><span class="text-l ml-2"> 이겨울 </span></h1>
+                <div class="flex">
+                    <img src="./portrait.jpg" alt="Profile Picture" class="hidden md:block w-[210px] mt-12 object-cover">
+                </div>
+                <div class="w-[210px] text-center mt-4">tspleetz AT unist.ac.kr</div>
+                <div class="w-[210px] flex justify-center gap-2 mt-2">
+                    <a onclick="copyToClipBoard()" class="text-gray-500 hover:text-blue-700 transition-colors duration-300 ease-in-out flex items-center cursor-[url('./cursor-copy.svg'),_pointer]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" class="w-[24px] h-[24px] mr-1" fill="currentColor" role="img">
+                            <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gyeoul-lee-58244b214/" target="_blank" rel="noopener noreferrer" title="LinkedIn"
+                        class="text-gray-500 hover:text-blue-700 transition-colors duration-300 ease-in-out">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[24px] h-[24px]" role="img" style="scale:0.8;">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=7XwdIS0AAAAJ" target="_blank" rel="noopener noreferrer" title="Google Scholar"
+                        class="text-gray-500 hover:text-blue-700 transition-colors duration-300 ease-in-out">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[24px] h-[24px]" role="img" style="scale:0.8;">
+                            <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9 12 9s-5.548 2.249-6.758 4.769zM12 10c1.381 0 2.5 1.119 2.5 2.5S13.381 15 12 15s-2.5-1.119-2.5-2.5S10.619 10 12 10zM12 15.46c3.032 0 5.582 1.638 6.784 3.82l-2.071 1.694C15.86 19.336 14.053 18.5 12 18.5s-3.86.836-4.713 2.474l-2.071-1.694C6.418 17.098 8.968 15.46 12 15.46z"/>
+                        </svg>
+                    </a>
+                </div>
+            </header>
+            <main class="flex-1">
+                <nav class="pt-4">
+                    <ul class="flex flex-wrap justify-between md:justify-end text-center">
+                        <li class="px-4 py-[6px] hover:bg-gray-200 rounded-[2px] transition-colors duration-300 ease-in-out  {isHome}"><a href="home.html">Home</a></li>
+                        <li class="px-4 py-[6px] hover:bg-gray-200 rounded-[2px] transition-colors duration-300 ease-in-out  {isCV}"><a href="cv.html">CV</a></li>
+                        <li class="px-4 py-[6px] hover:bg-gray-200 rounded-[2px] transition-colors duration-300 ease-in-out  {isResearch}"><a href="research.html">Research</a></li>
+                        <li class="px-4 py-[6px] hover:bg-gray-200 rounded-[2px] transition-colors duration-300 ease-in-out  {isCoursework}"><a href="coursework.html">Coursework</a></li>
+                        <!-- <li class="px-4 py-[6px] hover:bg-gray-200 rounded-[2px] transition-colors duration-300 ease-in-out  bg-gray-200 "><a href="essay.html">Essay</a></li> -->
+                    </ul>
+                </nav>
+                <div class="p-4">
+                    <!-- <h1 class="text-2xl font-bold">Essay</h1> <br/> -->
+<p> 우가우가 </p>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html> 
